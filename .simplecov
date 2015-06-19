@@ -5,4 +5,6 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
   Coveralls::SimpleCov::Formatter,
 ]
 
-SimpleCov.start
+SimpleCov.start do
+  add_filter '/spec/'
+end
