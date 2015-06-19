@@ -1,6 +1,6 @@
 require 'bundler/gem_tasks'
 
-task defalt: [:spec, :lint]
+task default: [:spec, :lint]
 
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new
