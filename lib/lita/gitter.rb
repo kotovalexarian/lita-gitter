@@ -1,4 +1,4 @@
-require "lita/gitter/version"
+require 'lita/gitter/version'
 
 module Lita
   module Gitter
