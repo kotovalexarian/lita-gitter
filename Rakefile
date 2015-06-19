@@ -1,3 +1,5 @@
 require "bundler/gem_tasks"
 
-task defalt: []
+task defalt: [:lint]
+
+task lint: []
