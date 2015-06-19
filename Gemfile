@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in lita-gitter.gemspec
 gemspec
 
+gem 'github_changelog_generator', '~> 1.6.1'
+
 gem 'yard', '~> 0.8.7.6', require: false
 gem 'redcarpet', require: false
 
