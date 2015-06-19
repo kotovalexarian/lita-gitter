@@ -6,3 +6,5 @@ gemspec
 gem 'rubocop', '~> 0.31.0', require: false
 
 gem 'rspec', '~> 3.3.0', require: false
+
+gem 'simplecov', '~> 0.10.0', require: false
