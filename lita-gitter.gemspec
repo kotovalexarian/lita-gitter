@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["braiden-vasco@mailtor.net"]
 
   spec.summary       = %q{Gitter adapter for the Lita chat bot}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.description   = %q{Gitter adapter for the Lita chat bot.}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
