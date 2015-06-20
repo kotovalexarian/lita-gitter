@@ -1,5 +1,6 @@
 require 'em-http'
 require 'json'
+require 'net/http'
 
 ##
 # Lita module.
@@ -53,6 +54,17 @@ module Lita
         end
       end
 
+      # Sends one or more messages to a user or room.
+      #
+      # @param target [Lita::Source] The user or room to send messages to.
+      # @param messages [Array<String>] An array of messages to send.
+      #
+      def send_messages(target, messages)
+        messages.reject(&:empty?).each do |message|
+          send_message(target, message)
+        end
+      end
+
       protected
 
       # Handle new message
@@ -68,6 +80,34 @@ module Lita
 
         message.command!
         robot.receive(message)
+
+        puts '> ' + text
+      end
+
+      # Sends one message to a user or room.
+      #
+      # @param target [Lita::Source] The user or room to send message to.
+      # @param text [String] Messages to send.
+      #
+      def send_message(_target, text) # rubocop:disable AbcSize, MethodLength
+        url = "https://api.gitter.im/v1/rooms/#{config.room_id}/chatMessages"
+        uri = URI.parse(url)
+
+        Net::HTTP.start(
+          uri.host,
+          uri.port,
+          use_ssl: true,
+          verify_mode: OpenSSL::SSL::VERIFY_NONE,
+        ) do |http|
+          request = Net::HTTP::Post.new(uri.path)
+          request.add_field('Content-Type', 'application/json')
+          request.add_field('Accept', 'application/json')
+          request.add_field('Authorization', "Bearer #{config.token}")
+          request.body = "{\"text\":\"#{text}\"}"
+          http.request(request)
+        end
+
+        puts '< ' + text
       end
     end
 
