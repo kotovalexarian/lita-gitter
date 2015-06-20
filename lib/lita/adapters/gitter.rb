@@ -101,7 +101,7 @@ module Lita
           request.add_field('Content-Type', 'application/json')
           request.add_field('Accept', 'application/json')
           request.add_field('Authorization', "Bearer #{config.token}")
-          request.body = {"text" => text}.to_json
+          request.body = { 'text' => text }.to_json
           http.request(request)
         end
       end
