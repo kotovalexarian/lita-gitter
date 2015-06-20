@@ -88,6 +88,8 @@ module Lita
         source = Source.new(user: user, room: room_id)
         message = Message.new(robot, text, source)
 
+        return if from_id == @user_id
+
         message.command!
         robot.receive(message)
       end
@@ -112,7 +114,9 @@ module Lita
           request.add_field('Accept', 'application/json')
           request.add_field('Authorization', "Bearer #{config.token}")
           request.body = { 'text' => text }.to_json
-          http.request(request)
+          response = http.request(request)
+
+          @user_id = JSON.parse(response.body)['fromUser']['id']
         end
       end
     end
