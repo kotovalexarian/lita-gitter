@@ -80,8 +80,6 @@ module Lita
 
         message.command!
         robot.receive(message)
-
-        puts '> ' + text
       end
 
       # Sends one message to a user or room.
@@ -106,8 +104,6 @@ module Lita
           request.body = "{\"text\":\"#{text}\"}"
           http.request(request)
         end
-
-        puts '< ' + text
       end
     end
 
