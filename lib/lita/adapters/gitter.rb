@@ -40,15 +40,25 @@ module Lita
             }
           )
 
+          buffer = ''
+
           request.stream do |chunk|
-            unless chunk.strip.empty?
-              response = JSON.parse(chunk)
+            body = buffer + chunk
 
-              text = response['text']
-              from_id = response['fromUser']['id']
-              room_id = config.room_id
+            unless body.strip.empty?
+              begin
+                response = JSON.parse(body)
+                body = ''
 
-              get_message(text, from_id, room_id)
+                text = response['text']
+                from_id = response['fromUser']['id']
+                room_id = config.room_id
+
+                get_message(text, from_id, room_id)
+
+              rescue JSON::ParserError
+                buffer = body
+              end
             end
           end
         end
