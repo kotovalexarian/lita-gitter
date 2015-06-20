@@ -2,5 +2,8 @@ AllCops:
   Exclude:
     - vendor/**/*
 
+Style/AndOr:
+  Enabled: false
+
 Style/TrailingComma:
   Enabled: false
