@@ -1,3 +1,6 @@
 AllCops:
   Exclude:
     - vendor/**/*
+
+Style/TrailingComma:
+  Enabled: false
