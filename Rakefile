@@ -19,6 +19,9 @@ task lint: [:rubocop]
 require 'rubocop/rake_task'
 RuboCop::RakeTask.new
 
+require 'yard'
+YARD::Rake::YardocTask.new
+
 desc 'Generate changelog'
 task :changelog, [:token] do |_t, args|
   cmd = 'github_changelog_generator'
