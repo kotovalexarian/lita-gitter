@@ -5,12 +5,12 @@ Lita::Adapters::Gitter
 [![Build Status](https://travis-ci.org/braiden-vasco/lita-gitter.svg)](https://travis-ci.org/braiden-vasco/lita-gitter)
 [![Coverage Status](https://coveralls.io/repos/braiden-vasco/lita-gitter/badge.svg)](https://coveralls.io/r/braiden-vasco/lita-gitter)
 
-[Gitter](https://gitter.im) adapter for the [Lita](https://lita.io) chat bot.
+[Gitter](https://gitter.im) adapter for the [Lita](http://lita.io) chat bot.
 
 Usage
 -----
 
-At first, see the documentation for Lita: https://docs.lita.io/
+At first, see the documentation for Lita: http://docs.lita.io/
 
 ### Installation
 
