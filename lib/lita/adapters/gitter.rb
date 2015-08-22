@@ -125,7 +125,7 @@ module Lita
           request.body = { 'text' => text }.to_json
           response = http.request(request)
 
-          @user_id = JSON.parse(response.body)['fromUser']['id']
+          @user_id = MultiJson.parse(response.body)['fromUser']['id']
         end
       end
     end
