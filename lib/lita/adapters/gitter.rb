@@ -1,5 +1,4 @@
 require 'em-http'
-require 'json'
 require 'net/http'
 
 ##
@@ -22,8 +21,7 @@ module Lita
       # and dispatches them to the robot.
       #
       def run # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
-        stream_url =
-          "https://stream.gitter.im/v1/rooms/#{config.room_id}/chatMessages"
+        stream_url = "https://stream.gitter.im/v1/rooms/#{config.room_id}/chatMessages"
 
         http = EventMachine::HttpRequest.new(
           stream_url,
@@ -33,6 +31,7 @@ module Lita
         )
 
         EventMachine.run do
+          log.debug("Connecting to Gitter Stream API (room: #{config.room_id}).")
           request = http.get(
             head: {
               'Accept' => 'application/json',
@@ -45,9 +44,16 @@ module Lita
           request.stream do |chunk|
             body = buffer + chunk
 
-            unless body.strip.empty?
+            if body.strip.empty?
+              # Keep alive packet, ignore!
+              next
+            end
+
+            if body.end_with?("}\n")
+              # End of chunk, let's process it!
               begin
-                response = JSON.parse(body)
+                response = MultiJson.load(body)
+                buffer = ''
                 body = ''
 
                 text = response['text']
@@ -56,9 +62,12 @@ module Lita
 
                 get_message(text, from_id, room_id)
 
-              rescue JSON::ParserError
-                buffer = body
+              rescue MultiJson::ParseError => e
+                log.error "Failed to decode JSON: #{e}"
               end
+            else
+              # Chunk too big, buffering!
+              buffer = body
             end
           end
         end
