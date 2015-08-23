@@ -15,9 +15,7 @@ module Lita
 
       attr_reader :connection
 
-      # The main loop. Listens for incoming messages,
-      # creates {Lita::Message} objects from them,
-      # and dispatches them to the robot.
+      # Delegates main loop execution to Connection Adapter
       #
       def run
         return if connection

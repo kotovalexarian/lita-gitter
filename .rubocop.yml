@@ -10,3 +10,6 @@ Style/TrailingComma:
 
 Metrics/LineLength:
   Max: 120
+
+AbcSize/MethodLength:
+  Enabled: false
