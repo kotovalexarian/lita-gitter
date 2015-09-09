@@ -17,7 +17,7 @@ At first, see the documentation for Lita: http://docs.lita.io/
 Add **lita-gitter** to your Lita instance's Gemfile:
 
 ```ruby
-gem 'lita-gitter', '~> 0.1.0'
+gem 'lita-gitter', '~> 0.1.1'
 ```
 
 ### Preparation
