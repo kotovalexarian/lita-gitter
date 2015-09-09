@@ -25,8 +25,15 @@ gem 'lita-gitter', '~> 0.1.0'
 Go to https://developer.gitter.im/apps, sign in if you are not already
 signed in, and remember your token.
 
-Then go to https://gitter.im/api/v1/rooms, find needed room by it's name
-and remember room ID which precedes room name.
+Then type in terminal (replace $LITA_GITTER_TOKEN with your token):
+
+```
+$ curl https://gitter.im/api/v1/rooms \
+-H "Accept: application/json" \
+-H "Authorization: Bearer $LITA_GITTER_TOKEN"
+```
+
+Find needed room by it's name and remember room ID which precedes room name.
 
 ### Configuration
 
