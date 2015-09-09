@@ -50,7 +50,7 @@ module Lita
         # @param target [Lita::Source] The user or room to send message to.
         # @param text [String] Messages to send.
         #
-        def send_message(_target, text) # rubocop:disable AbcSize, MethodLength
+        def send_message(_target, text) # rubocop:disable Metrics/AbcSize
           url = "https://api.gitter.im/v1/rooms/#{config.room_id}/chatMessages"
           uri = URI.parse(url)
 
@@ -94,8 +94,8 @@ module Lita
 
           get_message(text, from_id, room_id)
 
-          rescue MultiJson::ParseError => e
-            log.error "Failed to decode: #{body.inspect} - #{e}"
+        rescue MultiJson::ParseError => e
+          log.error "Failed to decode: #{body.inspect} - #{e}"
         end
 
         # Handle new message
