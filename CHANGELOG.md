@@ -1,5 +1,29 @@
 # Change Log
 
+## [v0.1.1](https://github.com/braiden-vasco/lita-gitter/tree/v0.1.1) (2015-09-09)
+
+[Full Changelog](https://github.com/braiden-vasco/lita-gitter/compare/v0.1.0...v0.1.1)
+
+**Closed issues:**
+
+- Change handler of chunks [\#19](https://github.com/braiden-vasco/lita-gitter/issues/19)
+
+**Merged pull requests:**
+
+- Improved parser and added some specs [\#20](https://github.com/braiden-vasco/lita-gitter/pull/20) ([brodock](https://github.com/brodock))
+
+- Use YARD again [\#17](https://github.com/braiden-vasco/lita-gitter/pull/17) ([braiden-vasco](https://github.com/braiden-vasco))
+
+- Remove open-ended dependencies [\#16](https://github.com/braiden-vasco/lita-gitter/pull/16) ([braiden-vasco](https://github.com/braiden-vasco))
+
+- Move development dependencies to gemspec [\#15](https://github.com/braiden-vasco/lita-gitter/pull/15) ([braiden-vasco](https://github.com/braiden-vasco))
+
+- Remove unnecessary dependencies [\#14](https://github.com/braiden-vasco/lita-gitter/pull/14) ([braiden-vasco](https://github.com/braiden-vasco))
+
+- Test with multiple versions of Ruby [\#13](https://github.com/braiden-vasco/lita-gitter/pull/13) ([braiden-vasco](https://github.com/braiden-vasco))
+
+- Version 0.1.0 [\#12](https://github.com/braiden-vasco/lita-gitter/pull/12) ([braiden-vasco](https://github.com/braiden-vasco))
+
 ## [v0.1.0](https://github.com/braiden-vasco/lita-gitter/tree/v0.1.0) (2015-06-20)
 
 **Merged pull requests:**
