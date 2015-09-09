@@ -22,8 +22,6 @@
 
 - Test with multiple versions of Ruby [\#13](https://github.com/braiden-vasco/lita-gitter/pull/13) ([braiden-vasco](https://github.com/braiden-vasco))
 
-- Version 0.1.0 [\#12](https://github.com/braiden-vasco/lita-gitter/pull/12) ([braiden-vasco](https://github.com/braiden-vasco))
-
 ## [v0.1.0](https://github.com/braiden-vasco/lita-gitter/tree/v0.1.0) (2015-06-20)
 
 **Merged pull requests:**
