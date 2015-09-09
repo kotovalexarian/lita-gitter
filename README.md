@@ -5,19 +5,19 @@ Lita::Adapters::Gitter
 [![Build Status](https://travis-ci.org/braiden-vasco/lita-gitter.svg)](https://travis-ci.org/braiden-vasco/lita-gitter)
 [![Coverage Status](https://coveralls.io/repos/braiden-vasco/lita-gitter/badge.svg)](https://coveralls.io/r/braiden-vasco/lita-gitter)
 
-[Gitter](https://gitter.im) adapter for the [Lita](https://lita.io) chat bot.
+[Gitter](https://gitter.im) adapter for the [Lita](http://lita.io) chat bot.
 
 Usage
 -----
 
-At first, see the documentation for Lita: https://docs.lita.io/
+At first, see the documentation for Lita: http://docs.lita.io/
 
 ### Installation
 
 Add **lita-gitter** to your Lita instance's Gemfile:
 
 ```ruby
-gem 'lita-gitter', '~> 0.1.0'
+gem 'lita-gitter', '~> 0.1.1'
 ```
 
 ### Preparation
@@ -25,8 +25,15 @@ gem 'lita-gitter', '~> 0.1.0'
 Go to https://developer.gitter.im/apps, sign in if you are not already
 signed in, and remember your token.
 
-Then go to https://gitter.im/api/v1/rooms, find needed room by it's name
-and remember room ID which precedes room name.
+Then type in terminal (replace $LITA_GITTER_TOKEN with your token):
+
+```
+$ curl https://gitter.im/api/v1/rooms \
+-H "Accept: application/json" \
+-H "Authorization: Bearer $LITA_GITTER_TOKEN"
+```
+
+Find needed room by it's name and remember room ID which precedes room name.
 
 ### Configuration
 

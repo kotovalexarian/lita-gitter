@@ -7,3 +7,4 @@ Lita.load_locales Dir[File.expand_path(
 )]
 
 require 'lita/adapters/gitter'
+require 'lita/adapters/gitter/connection'

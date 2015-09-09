@@ -7,3 +7,9 @@ Style/AndOr:
 
 Style/TrailingComma:
   Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+AbcSize/MethodLength:
+  Enabled: false
