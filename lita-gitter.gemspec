@@ -3,8 +3,8 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-gitter'
   spec.version       = '0.1.0'
-  spec.authors       = ['Braiden Vasco']
-  spec.email         = ['braiden-vasco@mailtor.net']
+  spec.authors       = ['Braiden Vasco', 'Gabriel Mazetto']
+  spec.email         = ['braiden-vasco@mailtor.net', 'brodock@gmail.com']
 
   spec.summary       = 'Gitter adapter for the Lita chat bot'
   spec.description   = 'Gitter adapter for the Lita chat bot.'
@@ -33,4 +33,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'lita', '~> 4.4'
   spec.add_runtime_dependency 'em-http-request', '~> 1.1'
+  spec.add_runtime_dependency 'multi_json'
 end
