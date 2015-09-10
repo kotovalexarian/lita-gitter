@@ -5,8 +5,6 @@ gemspec = Gem::Specification.load('lita-gitter.gemspec')
 github_user, github_project =
   gemspec.homepage.scan(%r{^https://github\.com/([^/]+)/([^/]+)/?$})[0]
 
-DEFAULT_EXCLUDE_LABELS = 'duplicate,question,invalid,wontfix'
-
 require 'bundler/gem_tasks'
 
 task default: [:spec, :lint]
@@ -28,7 +26,6 @@ task :changelog, [:token] do |_t, args|
   cmd << " -u #{github_user}"
   cmd << " -p #{github_project}"
   cmd << " -t #{args[:token]}" if args[:token]
-  cmd << " --exclude-labels version,#{DEFAULT_EXCLUDE_LABELS}"
 
   sh cmd
 end
