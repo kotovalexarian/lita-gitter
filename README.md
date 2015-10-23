@@ -25,7 +25,7 @@ gem 'lita-gitter', '~> 0.1.1'
 Go to https://developer.gitter.im/apps, sign in if you are not already
 signed in, and remember your token.
 
-Then type in terminal (replace $LITA_GITTER_TOKEN with your token):
+Then type in terminal (replace `$LITA_GITTER_TOKEN` with your token):
 
 ```
 $ curl https://gitter.im/api/v1/rooms \
