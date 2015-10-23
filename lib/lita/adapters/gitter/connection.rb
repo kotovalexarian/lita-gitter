@@ -1,4 +1,5 @@
 require 'em-http'
+require 'json'
 require 'net/http'
 
 module Lita
