@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'lita-gitter'
-  spec.version       = '0.1.1'
+  spec.version       = '0.1.2'
   spec.authors       = ['Braiden Vasco', 'Gabriel Mazetto']
   spec.email         = ['braiden-vasco@mailtor.net', 'brodock@gmail.com']
 

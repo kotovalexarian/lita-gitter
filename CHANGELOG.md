@@ -1,7 +1,14 @@
 # Change Log
 
-## [v0.1.1](https://github.com/braiden-vasco/lita-gitter/tree/v0.1.1) (2015-09-09)
+## [v0.1.2](https://github.com/braiden-vasco/lita-gitter/tree/v0.1.2) (2015-10-23)
+[Full Changelog](https://github.com/braiden-vasco/lita-gitter/compare/v0.1.1...v0.1.2)
 
+**Merged pull requests:**
+
+- Fix gem [\#24](https://github.com/braiden-vasco/lita-gitter/pull/24) ([braiden-vasco](https://github.com/braiden-vasco))
+- Don't use version label [\#23](https://github.com/braiden-vasco/lita-gitter/pull/23) ([braiden-vasco](https://github.com/braiden-vasco))
+
+## [v0.1.1](https://github.com/braiden-vasco/lita-gitter/tree/v0.1.1) (2015-09-09)
 [Full Changelog](https://github.com/braiden-vasco/lita-gitter/compare/v0.1.0...v0.1.1)
 
 **Closed issues:**
@@ -11,41 +18,25 @@
 **Merged pull requests:**
 
 - Improved parser and added some specs [\#20](https://github.com/braiden-vasco/lita-gitter/pull/20) ([brodock](https://github.com/brodock))
-
 - Use YARD again [\#17](https://github.com/braiden-vasco/lita-gitter/pull/17) ([braiden-vasco](https://github.com/braiden-vasco))
-
 - Remove open-ended dependencies [\#16](https://github.com/braiden-vasco/lita-gitter/pull/16) ([braiden-vasco](https://github.com/braiden-vasco))
-
 - Move development dependencies to gemspec [\#15](https://github.com/braiden-vasco/lita-gitter/pull/15) ([braiden-vasco](https://github.com/braiden-vasco))
-
 - Remove unnecessary dependencies [\#14](https://github.com/braiden-vasco/lita-gitter/pull/14) ([braiden-vasco](https://github.com/braiden-vasco))
-
 - Test with multiple versions of Ruby [\#13](https://github.com/braiden-vasco/lita-gitter/pull/13) ([braiden-vasco](https://github.com/braiden-vasco))
 
 ## [v0.1.0](https://github.com/braiden-vasco/lita-gitter/tree/v0.1.0) (2015-06-20)
-
 **Merged pull requests:**
 
 - Add instructions [\#11](https://github.com/braiden-vasco/lita-gitter/pull/11) ([braiden-vasco](https://github.com/braiden-vasco))
-
 - Basic implementation [\#10](https://github.com/braiden-vasco/lita-gitter/pull/10) ([braiden-vasco](https://github.com/braiden-vasco))
-
 - Add changelog generator [\#9](https://github.com/braiden-vasco/lita-gitter/pull/9) ([braiden-vasco](https://github.com/braiden-vasco))
-
 - Initialize Lita adapter [\#8](https://github.com/braiden-vasco/lita-gitter/pull/8) ([braiden-vasco](https://github.com/braiden-vasco))
-
 - Use YARD [\#7](https://github.com/braiden-vasco/lita-gitter/pull/7) ([braiden-vasco](https://github.com/braiden-vasco))
-
 - Configure Coveralls [\#6](https://github.com/braiden-vasco/lita-gitter/pull/6) ([braiden-vasco](https://github.com/braiden-vasco))
-
 - Configure Travis CI [\#5](https://github.com/braiden-vasco/lita-gitter/pull/5) ([braiden-vasco](https://github.com/braiden-vasco))
-
 - Add README [\#4](https://github.com/braiden-vasco/lita-gitter/pull/4) ([braiden-vasco](https://github.com/braiden-vasco))
-
 - Configure testing [\#3](https://github.com/braiden-vasco/lita-gitter/pull/3) ([braiden-vasco](https://github.com/braiden-vasco))
-
 - Configure linting [\#2](https://github.com/braiden-vasco/lita-gitter/pull/2) ([braiden-vasco](https://github.com/braiden-vasco))
-
 - Initialize gem [\#1](https://github.com/braiden-vasco/lita-gitter/pull/1) ([braiden-vasco](https://github.com/braiden-vasco))
 
 

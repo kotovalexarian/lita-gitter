@@ -17,7 +17,7 @@ At first, see the documentation for Lita: http://docs.lita.io/
 Add **lita-gitter** to your Lita instance's Gemfile:
 
 ```ruby
-gem 'lita-gitter', '~> 0.1.1'
+gem 'lita-gitter', '~> 0.1.2'
 ```
 
 ### Preparation
@@ -25,7 +25,7 @@ gem 'lita-gitter', '~> 0.1.1'
 Go to https://developer.gitter.im/apps, sign in if you are not already
 signed in, and remember your token.
 
-Then type in terminal (replace $LITA_GITTER_TOKEN with your token):
+Then type in terminal (replace `$LITA_GITTER_TOKEN` with your token):
 
 ```
 $ curl https://gitter.im/api/v1/rooms \
